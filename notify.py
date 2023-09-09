@@ -87,10 +87,10 @@ class AutodartsBot(discord.Client):
 
 
 @click.command()
-@click.argument("autodarts_email")
-@click.argument("autodarts_password")
-@click.argument("discord_token")
-@click.option("--discord-channel-id")
+@click.option("--autodarts-email", type=str, required=True)
+@click.option("--autodarts-password", type=str, required=True)
+@click.option("--discord-token", type=str, required=True)
+@click.option("--discord-channel-id", type=int, required=True)
 def main(autodarts_email, autodarts_password, discord_token, discord_channel_id):
     client = AutodartsBot(
         autodarts_email,

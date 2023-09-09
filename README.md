@@ -14,11 +14,15 @@ pip install -r requirements.txt
 
 ```
 $ python notify.py --help
-                                                                                                                                                                                                                                                               
- Usage: notify.py [OPTIONS] AUTODARTS_EMAIL AUTODARTS_PASSWORD DISCORD_TOKEN                                                                                                                                                                                   
-                                                                                                                                                                                                                                                               
-╭─ Options ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ --discord-channel-id    TEXT                                                                                                                                                                                                                                │
-│ --help                        Show this message and exit.                                                                                                                                                                                                   │
-╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+                                                                  
+ Usage: notify.py [OPTIONS]                                       
+                                                                  
+╭─ Options ──────────────────────────────────────────────────────╮
+│ *  --autodarts-email       TEXT     [required]                 │
+│ *  --autodarts-password    TEXT     [required]                 │
+│ *  --discord-token         TEXT     [required]                 │
+│ *  --discord-channel-id    INTEGER  [required]                 │
+│    --help                           Show this message and      │
+│                                     exit.                      │
+╰────────────────────────────────────────────────────────────────╯
 ```
